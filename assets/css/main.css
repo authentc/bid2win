@@ -455,7 +455,7 @@ h1 a:hover,
     h4 a:hover,
     h5 a:hover,
     h6 a:hover {
-    color: #ee4730;
+    color: #30b43b;
 }
 
 h5, h6 {
@@ -5777,7 +5777,7 @@ div[class*="auction"] .custom-button {
 }
 
 .about-content .title span {
-    color: #ee4730;
+    color: #088362;
     margin-bottom: 10px;
 }
 
