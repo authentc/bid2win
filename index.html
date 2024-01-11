@@ -21,12 +21,66 @@
 <link rel="shortcut icon" href="./assets/images/tab logo.png" type="image/x-icon">
 
 <meta name="robots" content="index, follow ">
-    <meta name="online auction, bid to win, exclusive deals, online bidding site" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Bid2Win offers a unique online auction experience where you can bid and win amazing products like laptops, gift vouchers, and more.">
-    <meta property="og:title" content="How to Become an SEO Expert (8 Steps)" />
-    <meta property="og:title"  content= "Bid2Win Auctions " />
+<meta name="online auction, bid to win, exclusive deals, online bidding site" content="HTML, CSS, JavaScript">
+<meta name="author"
+    content="Bid2Win offers a unique online auction experience where you can bid and win amazing products like laptops, gift vouchers, and more.">
+<meta property="og:title" content="How to Become an SEO Expert (8 Steps)" />
+<meta property="og:title" content="Bid2Win Auctions " />
 
 </head>
+<style>
+    /* Styling for the overlay */
+    #overlay3 {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    #overlay1 {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    #overlay2 {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    /* Styling for the video container */
+    #video-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 400px;
+        max-width: 900px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    /* Styling for the close button */
+    #close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        cursor: pointer;
+    }
+</style>
 
 <body>
     <!--============= ScrollToTop Section Starts Here =============-->
@@ -225,7 +279,10 @@
                             </div>
                             <div class="how-content">
                                 <h4 class="title">
-                                    <div style="color:#027b5b;">Step 1</div> Register
+                                    <div style="color:#027b5b;">Step 1</div> <button onclick="openVideoPopup1()"
+                                        class="button1">
+                                        Register
+                                    </button>
                                 </h4>
                                 <p></p>
                             </div>
@@ -238,7 +295,10 @@
                             </div>
                             <div class="how-content">
                                 <h4 class="title">
-                                    <div style="color:#027b5b;">Step 2</div> Bid
+                                    <div style="color:#027b5b;">Step 2</div> <button onclick="openVideoPopup2()"
+                                        class="button1">
+                                        Bid
+                                    </button>
                                 </h4>
                                 <p></p>
                             </div>
@@ -251,15 +311,46 @@
                             </div>
                             <div class="how-content">
                                 <h4 class="title">
-                                    <div style="color:#027b5b;">Step 3</div> Win For Less
+                                    <div style="color:#027b5b;">Step 3</div> <button onclick="openVideoPopup3()"
+                                        class="button1">
+                                        Win For Less
+                                    </button>
                                 </h4>
                                 <p></p>
+
+                                <div id="overlay3">
+                                    <div id="video-container">
+                                        <span id="close-btn" onclick="closeVideoPopup1()">X</span>
+                                        <video width="300px" height="400px" controls>
+                                            <source src="1.REG.mp4" type="video/mp4">
+                                          
+                                        </video>
+                                    </div>
+                                </div>
+                                <div id="overlay2">
+                                    <div id="video-container">
+                                        <span id="close-btn" onclick="closeVideoPopup2()">X</span>
+                                        <video width="300px" height="400px" controls>
+                                            <source src="2.BID.mp4" type="video/mp4">
+                                          
+                                        </video>
+                                    </div>
+                                </div>
+                                <div id="overlay1">
+                                    <div id="video-container">
+                                        <span id="close-btn" onclick="closeVideoPopup3()">X</span>
+                                        <video width="300px" height="400px" controls>
+                                            <source src="3.WIN FOR LESS.mp4" type="video/mp4">
+                                           
+                                        </video>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
-            </div>
-            <div class="car-2 d-none d-lg-block"><img src="./assets/images/how/car2.png" alt="how"></div>
+                <div class="car-2 d-none d-lg-block"><img src="./assets/images/how/car2.png" alt="how"></div>
         </section>
         <!--============= How Section Starts Here =============-->
 
@@ -271,117 +362,119 @@
                     <div class="left d-block">
                         <h2 class="title mb-3">Ongoing Auctions.</h2>
                         <div class="section-header cl-white" id="section2">
-                        <p>Start playing and buy Exclusive items for a less price with comfort.</p>
+                            <p>Start playing and buy Exclusive items for a less price with comfort.</p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center mb-30-none">
+                        <div class="col-sm-10 col-md-6 col-lg-4">
+                            <div class="auction-item-2">
+                                <div class="auction-thumb">
+                                    <a href=""><img src="./assets/images/auction/car/auction-1.png" alt="car"></a>
+                                    <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                    <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                </div>
+                                <div class="auction-content">
+                                    <h6 class="title">
+                                        <a href="">For Vouchers </a>
+                                    </h6>
+                                    <div class="bid-area">
+                                        <div class="bid-amount">
+                                            <div class="icon">
+                                                <i class="flaticon-auction"></i>
+                                            </div>
+                                            <div class="amount-content">
+
+                                                <div class="amount" style="font-size: medium;">Type REG BW and SMS to
+                                                    3947
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bid-amount">
+                                            <div class="icon">
+                                                <i class="flaticon-money"></i>
+                                            </div>
+                                            <div class="amount-content">
+                                                <div class="current">Gift vouchers Worth</div>
+                                                <div class="amount" style="font-size: medium;">25,000.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="text-center">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-10 col-md-6 col-lg-4">
+                            <div class="auction-item-2">
+                                <div class="auction-thumb">
+                                    <a href=""><img src="./assets/images/auction/car/auction-2.jpg" alt="car"></a>
+                                    <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                    <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
+                                </div>
+                                <div class="auction-content">
+                                    <h6 class="title">
+                                        <a href="">For Devices </a>
+                                    </h6>
+                                    <div class="bid-area">
+                                        <div class="bid-amount">
+                                            <div class="icon">
+                                                <i class="flaticon-auction"></i>
+                                            </div>
+                                            <div class="amount-content">
+                                                <div class="amount" style="font-size: medium;">Type REG BD and sms to
+                                                    3947
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bid-amount">
+                                            <div class="icon">
+                                                <i class="flaticon-money"></i>
+                                            </div>
+                                            <div class="amount-content">
+                                                <div class="current">Worth</div>
+                                                <div class="amount" style="font-size: medium;">Rs.185,000.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-10 col-md-6 col-lg-4">
+                            <div class="auction-item-2">
+                                <div class="auction-thumb">
+                                    <a href=""><img src="./assets/images/auction/car/auction-3.png" alt="car"></a>
+                                    <a href="#0" class="rating"><i class="far fa-star"></i></a>
+                                </div>
+                                <div class="auction-content">
+                                    <h6 class="title">
+                                        <a href="   ">Stay tuned for. </a>
+                                    </h6>
+                                    <div class="bid-area">
+                                        <div class="bid-amount">
+                                            <div class="icon">
+                                                <i class="flaticon-auction"></i>
+                                            </div>
+                                            <div class="amount-content">
+                                                <div class="amount" style="font-size: medium;">Stay Tuned
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="bid-amount">
+                                            <div class="icon">
+                                                <i class="flaticon-money"></i>
+                                            </div>
+                                            <div class="amount-content">
+
+                                                <div class="amount" style="font-size: medium;">Coming soon.</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="row justify-content-center mb-30-none">
-                    <div class="col-sm-10 col-md-6 col-lg-4">
-                        <div class="auction-item-2">
-                            <div class="auction-thumb">
-                                <a href=""><img src="./assets/images/auction/car/auction-1.png" alt="car"></a>
-                                <a href="#0" class="rating"><i class="far fa-star"></i></a>
-                                <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
-                            </div>
-                            <div class="auction-content">
-                                <h6 class="title">
-                                    <a href="">For Vouchers </a>
-                                </h6>
-                                <div class="bid-area">
-                                    <div class="bid-amount">
-                                        <div class="icon">
-                                            <i class="flaticon-auction"></i>
-                                        </div>
-                                        <div class="amount-content">
-
-                                            <div class="amount" style="font-size: medium;">Type REG BW and SMS to 3947
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="bid-amount">
-                                        <div class="icon">
-                                            <i class="flaticon-money"></i>
-                                        </div>
-                                        <div class="amount-content">
-                                            <div class="current">Gift vouchers Worth</div>
-                                            <div class="amount" style="font-size: medium;">25,000.00</div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="text-center">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-10 col-md-6 col-lg-4">
-                        <div class="auction-item-2">
-                            <div class="auction-thumb">
-                                <a href=""><img src="./assets/images/auction/car/auction-2.jpg" alt="car"></a>
-                                <a href="#0" class="rating"><i class="far fa-star"></i></a>
-                                <a href="#0" class="bid"><i class="flaticon-auction"></i></a>
-                            </div>
-                            <div class="auction-content">
-                                <h6 class="title">
-                                    <a href="">For Devices </a>
-                                </h6>
-                                <div class="bid-area">
-                                    <div class="bid-amount">
-                                        <div class="icon">
-                                            <i class="flaticon-auction"></i>
-                                        </div>
-                                        <div class="amount-content">
-                                            <div class="amount" style="font-size: medium;">Type REG BD and sms to 3947
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="bid-amount">
-                                        <div class="icon">
-                                            <i class="flaticon-money"></i>
-                                        </div>
-                                        <div class="amount-content">
-                                            <div class="current">Worth</div>
-                                            <div class="amount" style="font-size: medium;">Rs.185,000.00</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-10 col-md-6 col-lg-4">
-                        <div class="auction-item-2">
-                            <div class="auction-thumb">
-                                <a href=""><img src="./assets/images/auction/car/auction-3.png" alt="car"></a>
-                                <a href="#0" class="rating"><i class="far fa-star"></i></a>
-                            </div>
-                            <div class="auction-content">
-                                <h6 class="title">
-                                    <a href="   ">Stay tuned for. </a>
-                                </h6>
-                                <div class="bid-area">
-                                    <div class="bid-amount">
-                                        <div class="icon">
-                                            <i class="flaticon-auction"></i>
-                                        </div>
-                                        <div class="amount-content">
-                                            <div class="amount" style="font-size: medium;">Stay Tuned
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="bid-amount">
-                                        <div class="icon">
-                                            <i class="flaticon-money"></i>
-                                        </div>
-                                        <div class="amount-content">
-
-                                            <div class="amount" style="font-size: medium;">Coming soon.</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
         <!--============= Car Auction Section Ends Here =============-->
 
@@ -445,7 +538,7 @@
                                             <li><span>Feature</span>Dynamic light show that syncs to the beat</li>
                                             <li><span>Output power</span>160</li>
                                             <li><span>Bluetooth Frequency</span>2.4 GHz - 2.4835 GHz
-                                            
+
 
                                         </ul>
                                         <!-- <ul>
@@ -693,12 +786,12 @@
                                         <a href="#0"><i class="fas fa-envelope-open-text"></i>bid2winzm@gmail.com</a>
                                     </li>
                                     <li>
-                                        <a href="#0"><i class="fas fa-location-arrow"></i>Bid2Win. <br >
-                                            
+                                        <a href="#0"><i class="fas fa-location-arrow"></i>Bid2Win. <br>
+
                                             111/15, Hunupitiya
                                             Lake Road, Colombo 2</a>
                                     </li>
-                                    
+
                                 </ul>
                                 <ul class="social-icons">
                                     <li>
@@ -742,6 +835,38 @@
 
 
         <!--============= Footer Section Ends Here =============-->
+
+
+        <script>
+            function openVideoPopup3() {
+                document.getElementById('overlay3').style.display = 'block';
+            }
+
+            function closeVideoPopup3() {
+                document.getElementById('overlay3').style.display = 'none';
+            }
+        </script>
+
+        <script>
+            function openVideoPopup2() {
+                document.getElementById('overlay2').style.display = 'block';
+            }
+
+            function closeVideoPopup2() {
+                document.getElementById('overlay2').style.display = 'none';
+            }
+        </script>
+
+        <script>
+            function openVideoPopup1() {
+                document.getElementById('overlay3').style.display = 'block';
+            }
+
+            function closeVideoPopup1() {
+                document.getElementById('overlay3').style.display = 'none';
+            }
+        </script>
+
 
 
 
