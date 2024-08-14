@@ -4,7 +4,8 @@ Template Name: Sbidu - Bid & Auction HTML Template
 Template URI: http://pixner.net/sbidu/
 Author: uiaxis
 Author URI: https://themeforest.net/user/uiaxis
-Version: 1.0.0
+
+ersion: 1.0.0
 Text Domain: 
 */
 /*
@@ -1223,7 +1224,7 @@ input[type="submit"] {
 
 @media (min-width: 768px) {
     .section-header {
-        margin-bottom: 55px;
+        margin-bottom: 167px;
     }
 
     .section-header .cate {
@@ -1902,9 +1903,26 @@ footer {
     color: #52606d;
 }
 
-.social-icons li a:hover, .social-icons li a.active {
+.social-icons li a {
     color: #ffffff;
-    background: #ee4730;
+
+}
+
+.social-icons li:nth-child(1) a {
+    background-color: #3b5998; /* Facebook blue */
+}
+
+.social-icons li:nth-child(2) a {
+    background-color: #FF0000; /* YouTube red */
+}
+
+.social-icons li:nth-child(3) a {
+    background-color: #C13584; /* Instagram pink */
+}
+
+
+.social-icons li:nth-child(4) a {
+    background-color: #000000; /* TikTok black */
 }
 
 @media (max-width: 1199px) {
@@ -3349,7 +3367,7 @@ div[class*="auction"] .custom-button {
 
 .car-1, .car-2 {
     position: absolute;
-    top: 0;
+    top: 20px;
 }
 
 @media screen and (max-width: 1700px) {
@@ -3596,9 +3614,9 @@ div[class*="auction"] .custom-button {
 .auction-item-2 .auction-content .bid-area .bid-amount {
     padding: 12px 10px;
     align-items: center;
-    border-bottom: 2px dotted #deddf5;
-    border-top: 2px dotted #deddf5;
-    width: 50%;
+    /* border-bottom: 2px dotted #deddf5;
+    border-top: 2px dotted #deddf5; */
+    width: 100%;
     justify-content: center;
     position: relative;
 }
@@ -3651,13 +3669,6 @@ div[class*="auction"] .custom-button {
     }
 }
 
-.auction-item-2 .auction-content .bid-area .bid-amount::before {
-    width: 1px;
-    right: 0;
-    bottom: 15px;
-    top: 15px;
-    background: #bfbee8;
-}
 
 .auction-item-2 .auction-content .bid-area .bid-amount:nth-child(even)::before {
     display: none;
@@ -3914,9 +3925,11 @@ div[class*="auction"] .custom-button {
 
 .popular-auction-wrapper {
     border-radius: 20px;
-    background-color: #ffffff;
     box-shadow: 0 0 20px rgba(23, 29, 28, 0.2);
     padding: 50px 30px;
+    background-image: url("../images/auction/car/smallbanner.png");
+   
+    
 }
 
 @media (max-width: 767px) {
