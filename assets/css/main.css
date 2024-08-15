@@ -3928,7 +3928,11 @@ div[class*="auction"] .custom-button {
     box-shadow: 0 0 20px rgba(23, 29, 28, 0.2);
     padding: 50px 30px;
     background-image: url("../images/auction/car/smallbanner.png");
-   
+    background-size: contain; /* or cover */
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1100px; /* Desired width */
+    height: 500px; /* Desired height */
     
 }
 
