@@ -1224,7 +1224,7 @@ input[type="submit"] {
 
 @media (min-width: 768px) {
     .section-header {
-        margin-bottom: 167px;
+        margin-bottom: 212px;
     }
 
     .section-header .cate {
@@ -3933,10 +3933,12 @@ div[class*="auction"] .custom-button {
     background-position: center;
     width: 1100px; /* Desired width */
     height: 500px; /* Desired height */
+    position: relative;
+    z-index: 1;
     
-}
+} 
 
-@media (max-width: 767px) {
+@media (max-width: 767px) { 
     .popular-auction-wrapper {
         box-shadow: none;
         background: transparent;
